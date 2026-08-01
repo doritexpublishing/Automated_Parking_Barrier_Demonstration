@@ -1,0 +1,81 @@
+WEBVTT
+
+00:00.550 --> 00:13.380
+Welcome. In this demonstration, we will build an automatic parking barrier
+using an Arduino Uno, an ultrasonic sensor, and a small servo motor. Pause at
+any time when you need more time.
+
+00:14.850 --> 00:27.720
+The robot follows three stages. First, the ultrasonic sensor detects a nearby
+vehicle. Next, the Arduino compares the distance with fifteen centimetres.
+Finally, the servo raises or lowers the barrier.
+
+00:29.250 --> 00:43.800
+Before starting, gather every item shown here. You need the Arduino,
+ultrasonic sensor, servo, breadboard, jumper wires, USB cable, cardboard,
+tape, scissors, a toy car, and a computer with Arduino IDE.
+
+00:45.250 --> 00:57.400
+Safety comes first. Keep the USB cable disconnected while wiring. Use only
+five volts for the servo. Test the servo before adding cardboard, and keep
+liquids away from the circuit.
+
+00:58.850 --> 01:10.520
+Step one. Connect Arduino five volts to the red positive breadboard rail. Then
+connect an Arduino ground pin to the blue or black negative rail. Keep the USB
+cable unplugged.
+
+01:12.050 --> 01:22.680
+Step two. Add the ultrasonic sensor. Connect its V C C pin to the positive
+rail, and its ground pin to the negative rail. Leave trigger and echo
+unconnected for now.
+
+01:24.150 --> 01:37.340
+Step three. Add the signal wires. Connect Arduino digital pin nine to the
+sensor trigger pin. Connect Arduino digital pin ten to the sensor echo pin.
+The sensor now has four connections.
+
+01:38.850 --> 01:52.120
+Step four. Connect the servo carefully. Red goes to the positive rail. Brown,
+or black, goes to the negative rail. Orange, or yellow, is the signal wire and
+connects to Arduino digital pin six.
+
+01:53.650 --> 02:07.800
+Step five. Read every connection aloud. Confirm that five volts never connects
+to ground. Confirm all sensor and servo wires. When the check is complete,
+connect USB and upload the program.
+
+02:09.250 --> 02:22.280
+Step six. Test the servo without cardboard first. Then disconnect USB, attach
+a light cardboard strip to the white servo horn, reconnect USB, and test using
+a toy car or your hand.
+
+02:23.750 --> 02:34.100
+Use this complete diagram to check every pin. The realistic photographs help
+you recognise the parts, but the printed pin names in this diagram are the
+authority for electrical connections.
+
+02:35.750 --> 02:49.260
+Open Arduino IDE, select Arduino Uno, and choose the correct port. Paste the
+supplied program and click Upload. The program opens the barrier when an
+object is fifteen centimetres away or closer.
+
+02:50.750 --> 03:02.500
+Before adding cardboard, open Serial Monitor at nine thousand six hundred
+baud. Move your hand close to the sensor and check that the servo turns. Move
+your hand away and check that it returns.
+
+03:03.950 --> 03:15.780
+If the circuit does not work, check one issue at a time. Verify power and
+ground, then the sensor pins, then the three servo wires. Remove a heavy
+barrier before testing again.
+
+03:17.250 --> 03:29.880
+To demonstrate understanding, identify the sensor, controller, actuator, and
+power source. Change the detection distance from fifteen to twenty-five
+centimetres, upload again, and explain the result.
+
+03:31.350 --> 03:40.980
+Your automatic parking barrier is ready. Move the toy car toward the sensor,
+observe the gate opening, and explain the input, process, and output to your
+class.
